@@ -35,7 +35,6 @@ export default {
 <style lang="stylus" scoped>
 .home
 	text-align center
-	max-width 480px
 	margin auto
 	padding 1rem
 

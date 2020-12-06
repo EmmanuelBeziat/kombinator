@@ -56,22 +56,32 @@ button
 	min-width 2em
 	cursor pointer
 	outline 0
+	border 2px solid var(--color-text)
+
+	&:focus
+	&:hover
+		border-color var(--color-alt)
 
 .increment
 	border-radius 0 .25em .25em 0
+	border-left 0
 
 .decrement
 	border-radius .25em 0 0 .25em
+	border-right 0
 
 input
 	font-size 2rem
 	padding 1rem
 	width 4em
 	border-radius 0
-	border-left 0
-	border-right 0
+	border 2px solid var(--color-text)
+	transition .25s ease-in-out
 	outline 0
 	text-align center
+
+	&:focus
+		border-color var(--color-alt)
 
 	&::-webkit-inner-spin-button
 	&::-webkit-outer-spin-button

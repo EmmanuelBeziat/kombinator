@@ -24,8 +24,10 @@ export default {
 @require '~@/assets/fonts/mathlete/mathlete.css'
 
 :root
-	--color-background #fff
-	--color-text #222
+	--color-background #1f2533
+	--color-text #fff
+	--color-primary #ffb655
+	--color-alt #ee8700
 
 	--font-stack-common "Segoe UI", "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif
 	--font-stack-heading Mathlete, var(--font-stack-common)
@@ -48,6 +50,16 @@ body
 	font 400 16px/1.5 var(--font-stack-common)
 	background var(--color-background)
 	color var(--color-text)
+
+a
+	text-decoration none
+	transition .25s ease-in-out
+	color var(--color-primary)
+
+	&:hover
+	&:focus
+		text-decoration underline
+		color var(--color-alt)
 
 #app
 	min-height 100vh
