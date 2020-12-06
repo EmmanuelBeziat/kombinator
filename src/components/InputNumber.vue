@@ -1,7 +1,7 @@
 <template>
 	<div class="input-number">
 		<button class="decrement" @click="decrement()">-</button>
-		<input type="number" ref="number" v-model="inputNumber" @input="combination(inputNumber)" @change="combination(inputNumber)" min="2">
+		<input type="number" ref="number" v-model="inputNumber" @input="combination(inputNumber)" @change="combination(inputNumber)" min="2" aria-label="How many digits?" title="How many digits?">
 		<button class="increment" @click="increment()">+</button>
 	</div>
 </template>
