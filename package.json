@@ -1,0 +1,59 @@
+{
+	"name": "kombinator",
+	"description": "How much combinaisons?",
+	"version": "1.0.1",
+	"author": {
+		"name": "Emmanuel Béziat",
+		"email": "contact@emmanuelbeziat.com"
+	},
+	"license": "MPL-2.0",
+	"private": true,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"test:unit": "vue-cli-service test:unit",
+		"lint": "vue-cli-service lint",
+		"publish": "npm run build && surge --project ./dist --domain kombinator.surge.sh"
+	},
+	"git": {
+		"scripts": {
+			"pre-push": "npm run publish"
+		}
+	},
+	"repository": {
+		"type": "https://github.com/EmmanuelBeziat/kombinator.git"
+	},
+	"bugs": {
+		"url": "https://github.com/EmmanuelBeziat/kombinator/issues"
+	},
+	"homepage": "https://github.com/EmmanuelBeziat/kombinator#readme",
+	"keywords": [
+		"javascript",
+		"vuejs",
+		"maths"
+	],
+	"dependencies": {
+		"core-js": "^3.6.5",
+		"register-service-worker": "^1.7.1",
+		"vue": "^3.0.0",
+		"vue-router": "^4.0.0-0"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "~4.5.0",
+		"@vue/cli-plugin-eslint": "~4.5.0",
+		"@vue/cli-plugin-pwa": "~4.5.0",
+		"@vue/cli-plugin-router": "~4.5.0",
+		"@vue/cli-plugin-unit-mocha": "~4.5.0",
+		"@vue/cli-service": "~4.5.0",
+		"@vue/compiler-sfc": "^3.0.0",
+		"@vue/test-utils": "^2.0.0-0",
+		"babel-eslint": "^10.1.0",
+		"chai": "^4.1.2",
+		"eslint": "^6.7.2",
+		"eslint-plugin-vue": "^7.0.0-0",
+		"git-scripts": "^0.4.3",
+		"stylus": "^0.54.7",
+		"stylus-loader": "^3.0.2",
+		"surge": "^0.21.7"
+	}
+}
